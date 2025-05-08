@@ -1,59 +1,103 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>موقعي على Canva</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background: #f9f9f9;
-    }
-    .canva-embed {
-      position: relative;
-      width: 100%;
-      height: 0;
-      padding-top: 393.5578%;
-      box-shadow: 0 2px 8px rgba(63,69,81,0.16);
-      margin: 2em auto;
-      overflow: hidden;
-      border-radius: 8px;
-      max-width: 900px;
-    }
-    .canva-embed iframe {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      border: none;
-    }
-    .credit {
-      text-align: center;
-      font-size: 16px;
-      margin-bottom: 2em;
-    }
-    .credit a {
-      color: #007acc;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-weight: 600;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
 </head>
 <body>
 
-  <div class="canva-embed">
-    <iframe loading="lazy"
-      src="https://www.canva.com/design/DAGm5ocPVjI/aa5vCGIrKjBlH-l5QStVqQ/watch?embed"
-      allowfullscreen>
-    </iframe>
-  </div>
+<header>
+    <h1>Contact Us</h1>
+</header>
 
-  <div class="credit">
-    <a href="https://www.canva.com/design/DAGm5ocPVjI/aa5vCGIrKjBlH-l5QStVqQ/watch" target="_blank" rel="noopener">
-      تصميم
-    </a> بواسطة Saif Alalawi
-  </div>
+<div class="container">
+    <div class="contact-form">
+        <h2>We'd love to hear from you!</h2>
+        <p>Please fill out the form below and we will get in touch with you as soon as possible.</p>
+        
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Your Phone Number" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
